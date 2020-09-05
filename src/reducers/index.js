@@ -1,4 +1,5 @@
 import { combineReducers } from 'redux';
-import theme from 'reducers/theme';
+import theme from './themeReducers';
+import fab from './fabReducers';
 
-export default combineReducers({ theme });
+export default combineReducers({ theme, fab });

@@ -5,7 +5,7 @@ import reducers from 'reducers';
 
 const persistedState = localStorage.getItem('theme')
   ? { theme: JSON.parse(localStorage.getItem('theme')) }
-  : {};
+  : { theme: { color: 'light', typography: 'normal' } };
 
 export default function StoreProvider({ children }) {
   const store = createStore(reducers, persistedState);

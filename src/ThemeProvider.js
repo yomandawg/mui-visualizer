@@ -1,23 +1,24 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import {
-  createMuiTheme,
   responsiveFontSizes,
+  createMuiTheme,
   ThemeProvider as MuiThemeProvider,
 } from '@material-ui/core/styles';
 import { ThemeProvider } from 'styled-components';
+import * as themeColors from 'theme/colors';
+import * as themeTypographys from 'theme/typographys';
 
-function ThemeProviderComponent({ children, theme }) {
+function ThemeProviderComponent({ children, theme: { color, typography } }) {
   const $theme = React.useMemo(
     () =>
       responsiveFontSizes(
         createMuiTheme({
-          palette: {
-            type: theme,
-          },
+          palette: themeColors[color],
+          typography: themeTypographys[typography],
         })
       ),
-    [theme]
+    [color, typography]
   );
 
   return (
