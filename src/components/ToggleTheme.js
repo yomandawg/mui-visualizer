@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import styled from 'styled-components';
 import * as themeActions from 'actions/themeActions';
 
+import ReactColor from './ReactColor';
+
 const StyledDiv = styled.div`
   background-color: ${({ theme }) => theme.palette.background.default};
   color: ${({ theme }) => theme.palette.text.primary};
@@ -41,6 +43,10 @@ function ToggleTheme({ theme, toggleColor, changeColor }) {
       <StyledButton name="toggleColor" onClick={toggleColor}>
         Toggle Color
       </StyledButton>
+
+      <br />
+
+      <ReactColor />
     </StyledDiv>
   );
 }

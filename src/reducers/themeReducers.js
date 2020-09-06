@@ -5,7 +5,10 @@ import {
   CHANGE_TYPOGRPAHY,
 } from 'actions/types';
 
-export default function (state = {}, action) {
+export default function (
+  state = { color: 'light', typography: 'normal' },
+  action
+) {
   switch (action.type) {
     case TOGGLE_COLOR:
       const newColor = state.color === 'light' ? 'dark' : 'light';
