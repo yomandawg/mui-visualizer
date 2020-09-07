@@ -6,19 +6,19 @@ import {
   ThemeProvider as MuiThemeProvider,
 } from '@material-ui/core/styles';
 import { ThemeProvider } from 'styled-components';
-import * as themeColors from 'theme/colors';
-import * as themeTypographys from 'theme/typographys';
+import { getPalette } from 'helpers/theme';
 
-function ThemeProviderComponent({ children, theme: { color, typography } }) {
+function ThemeProviderComponent({ children, palette }) {
+  const $palette = getPalette(palette);
+
   const $theme = React.useMemo(
     () =>
       responsiveFontSizes(
         createMuiTheme({
-          palette: themeColors[color],
-          typography: themeTypographys[typography],
+          palette: $palette,
         })
       ),
-    [color, typography]
+    [$palette]
   );
 
   return (
@@ -30,7 +30,7 @@ function ThemeProviderComponent({ children, theme: { color, typography } }) {
 
 function mapStateToProps(state) {
   return {
-    theme: state.theme,
+    palette: state.palette,
   };
 }
 

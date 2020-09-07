@@ -3,8 +3,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import StoreProvider from 'StoreProvider';
 import ThemeProvider from 'ThemeProvider';
 
-import { ToggleTheme } from 'components';
-import CreateFabs from 'components/CreateFabs';
+import { Header, Body, Footer } from 'components';
 
 export default function App() {
   return (
@@ -12,9 +11,12 @@ export default function App() {
       <StoreProvider>
         <ThemeProvider>
           <BrowserRouter>
-            <Route path="/" exact component={ToggleTheme} />
+            <Header />
+            <Route path="/">
+              <Body />
+            </Route>
+            <Footer />
           </BrowserRouter>
-          <CreateFabs />
         </ThemeProvider>
       </StoreProvider>
     </>

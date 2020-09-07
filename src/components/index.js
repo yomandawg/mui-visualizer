@@ -1,3 +1,3 @@
-export { default as ToggleTheme } from './ToggleTheme';
-export { default as CreateFabs } from './CreateFabs';
-export { default as ReactColor } from './ReactColor';
+export { default as Header } from './Header';
+export { default as Body } from './Body';
+export { default as Footer } from './Footer';
