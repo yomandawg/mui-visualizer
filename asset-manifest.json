@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/mui-visualizer/static/js/main.1f2d309d.chunk.js",
+    "main.js.map": "/mui-visualizer/static/js/main.1f2d309d.chunk.js.map",
+    "runtime-main.js": "/mui-visualizer/static/js/runtime-main.0671f07c.js",
+    "runtime-main.js.map": "/mui-visualizer/static/js/runtime-main.0671f07c.js.map",
+    "static/js/2.19ba297c.chunk.js": "/mui-visualizer/static/js/2.19ba297c.chunk.js",
+    "static/js/2.19ba297c.chunk.js.map": "/mui-visualizer/static/js/2.19ba297c.chunk.js.map",
+    "index.html": "/mui-visualizer/index.html",
+    "precache-manifest.c2158b11896ebe8405fa00eb62bf3d4c.js": "/mui-visualizer/precache-manifest.c2158b11896ebe8405fa00eb62bf3d4c.js",
+    "service-worker.js": "/mui-visualizer/service-worker.js",
+    "static/js/2.19ba297c.chunk.js.LICENSE.txt": "/mui-visualizer/static/js/2.19ba297c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0671f07c.js",
+    "static/js/2.19ba297c.chunk.js",
+    "static/js/main.1f2d309d.chunk.js"
+  ]
+}
